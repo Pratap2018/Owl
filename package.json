@@ -1,6 +1,6 @@
 {
   "name": "discord_test_bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "my_test_bot",
   "main": "index.js",
   "scripts": {
