@@ -1,6 +1,4 @@
 const Discord = require('discord.js');
-const fs = require("fs");
-
 const { prefix, token } = require('./config.json');
 
 const client = new Discord.Client();
@@ -151,11 +149,13 @@ client.on('voiceStateUpdate', async (oldMember, newMember) => {
 /**** */
 
 client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find(ch => ch.name == 'logs');
+    var channel = member.guild.channels.find(ch => ch.name == 'logs');
     if (!channel) {
-        channel = member.guild.channels.find(ch => ch.name == 'general');
+        return;
     };
     channel.send(`Welcome to the server, ${member}`);
 
 });
+
+
 client.login(token);
