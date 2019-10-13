@@ -9,6 +9,7 @@ A simple bot for discord
 ```
 plse report any issue.
 ```
+- [x] Create a text channel exactly named as "logs"
 
 ```
  Make sure to paste your bot token in config.json file
